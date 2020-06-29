@@ -47,8 +47,8 @@ public class CinemaRestController {
 		String nomPhoto = film.getPhoto();
 		//On récupère le fichier image sans utiliser d'adresse absolu
 		// l'adresse est le répertoire de l'utilisateur courant (user.home)
-		File photo = new File(System.getProperty("user.home")+"/cinema/images/"+nomPhoto+".jpg");
-//		File photo = new File("src/main/resources/static/images/"+nomPhoto+".jpg");
+//		File photo = new File(System.getProperty("user.home")+"/cinema/images/"+nomPhoto+".jpg");
+		File photo = new File("src/main/resources/static/images/"+nomPhoto+".jpg");
 //		System.out.println(new ClassPathResource("Voici le lien de image :"+"images/"+nomPhoto+".jpg"));
 		Path path = Paths.get(photo.toURI());
 		return Files.readAllBytes(path);

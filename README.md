@@ -1,2 +1,2 @@
 # cinema
-Réservation des tickets de Cinéma (Partie backend)
+Booking of cinema tickets (backend part)
